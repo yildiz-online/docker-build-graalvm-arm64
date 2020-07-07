@@ -9,4 +9,5 @@ ENV PATH="${PATH}:${JAVA_HOME}/bin"
 RUN apt-get update && apt-get install -y -q wget \
 && wget -q https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.1.0/graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz \
 && tar -xzf graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz \
-&& java -version
+&& java -version \
+&& rm graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz
