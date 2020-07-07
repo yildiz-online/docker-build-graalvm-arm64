@@ -11,3 +11,5 @@ RUN apt-get update && apt-get install -y -q wget \
 && tar -xzf graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz \
 && java -version \
 && rm graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz
+
+RUN gu install native-image
