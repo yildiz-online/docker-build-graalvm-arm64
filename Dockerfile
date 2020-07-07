@@ -1,1 +1,1 @@
-from: arm64v8/ubuntu
+FROM arm64v8/ubuntu:latest
