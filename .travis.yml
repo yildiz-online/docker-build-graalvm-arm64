@@ -13,4 +13,4 @@ script:
 after_success:
   - docker login -u="moussavdb" -p="$DOCKER_PASSWORD";
     docker push moussavdb/build-graalvm-arm64:latest;
-    docker push moussavdb/build-java:graalvm-arm64$TRAVIS_BUILD_NUMBER;
+    docker push moussavdb/build-graalvm-arm64:$TRAVIS_BUILD_NUMBER;
