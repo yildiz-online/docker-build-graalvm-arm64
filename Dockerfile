@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y -q wget gcc libc6-dev zlib1g-dev \
 && java -version \
 && rm graalvm-ce-java11-linux-aarch64-20.1.0.tar.gz \
 && wget -q https://apache.belnet.be/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz \
-&& tar -xzf apache-maven-3.6.3-bin.tar.gz \
+&& tar -xvzf apache-maven-3.6.3-bin.tar.gz \
 && mvn -v \
 && rm apache-maven-3.6.3-bin.tar.gz \
 && apt-get purge -y -q wget
