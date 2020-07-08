@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y -q wget gcc libc6-dev zlib1g-dev \
 && wget -q https://apache.belnet.be/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz \
 && tar -xvzf apache-maven-3.6.3-bin.tar.gz \
 && rm apache-maven-3.6.3-bin.tar.gz \
+&& mvn -v
 && apt-get purge -y -q wget
 
 RUN gu install native-image
