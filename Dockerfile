@@ -4,7 +4,7 @@ LABEL maintainer="Grégory Van den Borre vandenborre.gregory@hotmail.fr"
 
 ENV JAVA_FILE=graalvm-ce-java11-20.1.0
 ENV JAVA_HOME=/${JAVA_FILE}
-ENV M2_HOME=/${JAVA_FILE}
+ENV M2_HOME=apache-maven-3.6.3
 ENV PATH="${PATH}:${JAVA_HOME}/bin:$(M2_HOME)/bin"
 
 RUN apt-get update && apt-get install -y -q wget gcc libc6-dev zlib1g-dev \
