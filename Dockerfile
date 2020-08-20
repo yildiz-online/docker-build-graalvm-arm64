@@ -2,7 +2,7 @@ FROM arm64v8/ubuntu:latest
 
 LABEL maintainer="Grégory Van den Borre vandenborre.gregory@hotmail.fr"
 
-ENV GRAALVM_VERSION=20.1.0
+ENV GRAALVM_VERSION=20.2.0
 
 ENV JAVA_FILE=graalvm-ce-java11-${GRAALVM_VERSION}
 ENV JAVA_HOME=/${JAVA_FILE}
